@@ -4,13 +4,23 @@
 jTest
 =====
 
-> Javascript framework testing suite
+> Javascript framework testing suite for web applications using jQuery's interface.
 
 
 Install
 -------
 
+Run <code>install.sh</code> from console to fetch dependencies and deploy assets:
+
 <pre>sh install.sh</pre>
+
+
+Load
+----
+
+Load your app that includes a <code>index.php</code> into jTest by using:
+
+<pre>jTest/?app={your-app}</pre>
 
 
 Libraries
