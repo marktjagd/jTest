@@ -14,5 +14,17 @@
         {
             assert.isFunction($);
         });
+        it('addClass is function', function()
+        {
+            assert.isFunction($.fn.addClass);
+        });
+        it('removeClass is function', function()
+        {
+            assert.isFunction($.fn.removeClass);
+        });
+        it('jTest is object', function()
+        {
+            assert.isObject(jTest);
+        });
     });
 })(window.jBone || window.Zepto || window.jQuery, window);

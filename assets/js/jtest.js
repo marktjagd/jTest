@@ -13,7 +13,7 @@
 {
     'use strict';
 
-    var jTest = win.jTest || {};
+    win.jTest = win.jTest || {};
 
     /* misc */
 
