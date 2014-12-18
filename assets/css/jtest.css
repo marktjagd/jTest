@@ -1,0 +1,100 @@
+/**
+ * @tableofcontents
+ *
+ * 1. global
+ * 2. title
+ * 3. box
+ * 4. list
+ */
+
+/* @section 1. global */
+
+body
+{
+    background: #eee;
+    color: #555;
+    font: 1em helvetica, sans-serif;
+}
+
+a
+{
+    color: #333;
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+/* @section 2. title */
+
+.jtest-title-framework
+{
+    background: #fff;
+    font-size: 4em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.jtest-title-framework, .jtest-title-framework a
+{
+    color: #eee;
+}
+
+/* is ready */
+
+.jtest-title-framework.jtest-is-ready, .jtest-title-framework.jtest-is-ready a
+{
+    color: #9dc42e;
+}
+
+/* version */
+
+.jtest-title-framework a:after
+{
+    content: attr(data-version);
+    font-size: 0.25em;
+    margin-left: 0.5em;
+}
+
+/* @section 3. box */
+
+.jtest-box-debug
+{
+    background: #9dc42e;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    line-height: 1.75em;
+    right: 0;
+    padding: 0.5em;
+    position: fixed;
+    text-align: center;
+}
+
+.jtest-box-debug.jtest-is-error
+{
+    background: #ff0010;
+}
+
+/* @section 4. list */
+
+.jtest-list-statistic
+{
+    font-size: 1.25em;
+    line-height: 1.75em;
+    margin: 1rem;
+}
+
+/* @section 5. app */
+
+.jtest-title-app
+{
+    color: #9dc42e;
+}
+
+.jtest-title-app, .jtest-wrapper-app
+{
+    margin: 1rem;
+}

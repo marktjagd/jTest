@@ -1,0 +1,7 @@
+.idea
+bower_modules
+coverage
+node_modules
+public/cssmin
+public/jsmin
+vendor
