@@ -18,9 +18,9 @@ Run <code>install.sh</code> from console to fetch dependencies and deploy assets
 Load
 ----
 
-Load your custom web applications into jTest by using:
+Load your custom web applications into jTest:
 
-<pre>jTest/?app={your-app}/index.php</pre>
+<pre>jTest/?app={your-app}</pre>
 
 
 Libraries
