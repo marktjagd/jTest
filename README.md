@@ -4,6 +4,12 @@ jTest
 > Javascript framework testing suite
 
 
+Install
+-------
+
+<pre>sh install.sh</pre>
+
+
 Libraries
 ---------
 
