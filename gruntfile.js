@@ -81,7 +81,18 @@ module.exports = function(grunt)
                 jshintrc: '.jshintrc'
             }
         },
-        
+        jsonlint:
+        {
+            dependency:
+            {
+                src:
+                [
+                    'bower.json',
+                    'package.json'
+                ]
+            }
+        },
+
         /* @section 2. deploy */
         
         cssmin:
@@ -93,7 +104,7 @@ module.exports = function(grunt)
                     'assets/css/reset.css',
                     'assets/css/jtest.css'
                 ],
-                dest: 'public/cssmin/jtest_min.css'
+                dest: 'public/cssmin/jtest.min.css'
             }
         },
         uglify:
@@ -107,7 +118,7 @@ module.exports = function(grunt)
                     'bower_components/boomerang/plugins/rt.js',
                     'bower_components/boomerang/plugins/mobil.js'
                 ],
-                dest: 'public/jsmin/boomerang_min.js'
+                dest: 'public/jsmin/boomerang.min.js'
             },
             jbone:
             {
@@ -117,7 +128,7 @@ module.exports = function(grunt)
                     'bower_components/html5-polyfills/classList.js',
                     'assets/js/jbone_extend.js'
                 ],
-                dest: 'public/jsmin/jbone_min.js'
+                dest: 'public/jsmin/jbone.min.js'
             },
             jboneAjax:
             {
@@ -128,7 +139,7 @@ module.exports = function(grunt)
                     'node_modules/reqwest/reqwest.js',
                     'assets/js/jbone_extend.js'
                 ],
-                dest: 'public/jsmin/jbone_min.js'
+                dest: 'public/jsmin/jbone.min.js'
             },
             zepto:
             {
@@ -136,7 +147,7 @@ module.exports = function(grunt)
                 [
                     'bower_components/zepto/zepto.js'
                 ],
-                dest: 'public/jsmin/zepto_min.js'
+                dest: 'public/jsmin/zepto.min.js'
             },
             jquery:
             {
@@ -144,7 +155,7 @@ module.exports = function(grunt)
                 [
                     'bower_components/jquery/dist/jquery.js'
                 ],
-                dest: 'public/jsmin/jquery_min.js'
+                dest: 'public/jsmin/jquery.min.js'
             }
         },
         
@@ -209,6 +220,7 @@ module.exports = function(grunt)
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-htmlhint');
+    grunt.loadNpmTasks('grunt-jsonlint');
     grunt.loadNpmTasks('grunt-mocha');
 
     /* register tasks */
@@ -217,12 +229,13 @@ module.exports = function(grunt)
     [
         'csslint',
         'htmlhint',
-        'jshint'
+        'jshint',
+        'jsonlint'
     ]);
     grunt.registerTask('test',
     [
         'mocha',
-        'mocha_istanbul'
+        'blanket_mocha'
     ]);
     grunt.registerTask('deploy',
     [

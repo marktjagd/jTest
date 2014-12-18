@@ -37,7 +37,7 @@
 
     /* reqwest is present */
 
-    if (typeof win.reqwest === 'object')
+    if (typeof win.reqwest === 'function' && typeof win.reqwest.compat === 'function')
     {
         jBone.ajax = win.reqwest.compat;
     }

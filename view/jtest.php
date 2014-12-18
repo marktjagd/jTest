@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>jTest - Javascript framework testing suite</title>
-        <link href="../public/cssmin/jtest_min.css" rel="stylesheet" media="all" />
+        <link href="../public/cssmin/jtest.min.css" rel="stylesheet" media="all" />
     </head>
 
     <body>
@@ -21,9 +21,9 @@
         <?php endif; ?>
 
         <ul class="jtest-js-statistic jtest-list-statistic">
-            <?php if (file_exists('../public/jsmin/' . $framework . '_min.js')): ?>
-                <li>package: <?php echo round(filesize('../public/jsmin/' . $framework . '_min.js') / 1024, 2); ?> kb
-                    (<?php echo round(strlen(gzcompress(file_get_contents('../public/jsmin/' . $framework . '_min.js'))) / 1024, 2); ?> kb)
+            <?php if (file_exists('../public/jsmin/' . $framework . '.min.js')): ?>
+                <li>package: <?php echo round(filesize('../public/jsmin/' . $framework . '.min.js') / 1024, 2); ?> kb
+                    (<?php echo round(strlen(gzcompress(file_get_contents('../public/jsmin/' . $framework . '.min.js'))) / 1024, 2); ?> kb)
                 </li>
             <?php endif; ?>
         </ul>
