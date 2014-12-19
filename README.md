@@ -4,7 +4,7 @@
 jTest
 =====
 
-> Javascript framework testing suite for web applications using jQuery's interface.
+> Javascript framework testing suite for web applications using jQuery's interface. It provides the option to simultaneously develop a project on multiple environments.
 
 
 Install

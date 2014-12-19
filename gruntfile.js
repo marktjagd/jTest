@@ -45,6 +45,7 @@ module.exports = function(grunt)
             {
                 src:
                 [
+                    'index.php',
                     'view/*.php'
                 ]
             },
