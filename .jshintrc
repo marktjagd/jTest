@@ -17,6 +17,7 @@
     {
         "jBone": true,
         "jQuery": true,
+        "jTest": true,
         "Zepto": true
     }
 }
