@@ -12,17 +12,6 @@ module.exports = function(grunt)
 
     grunt.initConfig(
     {
-        autoprefixer:
-        {
-            jtest:
-            {
-                src:
-                [
-                    'assets/css/*.css'
-                ]
-            }
-        },
-        
         /* @section 1. lint */
         
         csslint:
@@ -214,7 +203,6 @@ module.exports = function(grunt)
 
     /* load tasks */
 
-    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-blanket-mocha');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-contrib-cssmin');

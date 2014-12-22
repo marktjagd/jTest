@@ -44,9 +44,6 @@ Tasks
   + [cssmin](https://www.npmjs.org/package/grunt-contrib-cssmin)
   + [uglify](https://www.npmjs.org/package/grunt-contrib-uglify)
 
-* {standalone}
-  + [autoprefixer](https://www.npmjs.org/package/grunt-autoprefixer)
-
 
 Libraries
 ---------

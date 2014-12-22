@@ -16,7 +16,6 @@
         "chai": "~1",
         "blanket": "~1",
         "grunt": "~0.4",
-        "grunt-autoprefixer": "~2",
         "grunt-blanket-mocha": "~0.4",
         "grunt-contrib-csslint": "~0.3",
         "grunt-contrib-cssmin": "~0.10",
