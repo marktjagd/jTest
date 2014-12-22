@@ -13,7 +13,7 @@ module.exports = function(grunt)
     grunt.initConfig(
     {
         /* @section 1. lint */
-        
+
         csslint:
         {
             jtest:
@@ -35,6 +35,7 @@ module.exports = function(grunt)
                 src:
                 [
                     'index.php',
+                    'tests/*.html',
                     'view/*.php'
                 ]
             },
@@ -84,7 +85,7 @@ module.exports = function(grunt)
         },
 
         /* @section 2. deploy */
-        
+
         cssmin:
         {
             jtest:
@@ -148,7 +149,7 @@ module.exports = function(grunt)
                 dest: 'public/jsmin/jquery.min.js'
             }
         },
-        
+
         /* @section 3. test */
 
         mocha:
