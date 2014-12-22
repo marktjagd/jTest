@@ -1,13 +1,11 @@
 /**
  * @tableofcontents
  *
- * 1. jTest
- *    1.1 print boomerang
- *    1.2 print method
- *    1.2 print debug
+ * 1. print debug
+ * 2. print boomerang
+ * 3. print method
+ * 4. document ready
  */
-
-/* @section 1. jTest */
 
 (function ($, win)
 {
@@ -37,7 +35,7 @@
         debug: $('div.jtest-js-debug')
     };
 
-    /* @section 1.1 print debug */
+    /* @section 1. print debug */
 
     jTest.printDebug = function ()
     {
@@ -57,7 +55,7 @@
         };
     };
 
-    /* @section 1.2 print boomerang */
+    /* @section 2. print boomerang */
 
     jTest.printBoomerang = function ()
     {
@@ -87,7 +85,7 @@
         });
     };
 
-    /* @section 1.3 print method */
+    /* @section 3. print method */
 
     jTest.printMethod = function ()
     {
@@ -115,7 +113,7 @@
         $('<li>method: ' + counter + '</li>').appendTo(jTest.elements.statistic);
     };
 
-    /* document ready */
+    /* @section 4. document ready */
 
     $(function ()
     {

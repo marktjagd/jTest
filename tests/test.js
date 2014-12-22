@@ -1,3 +1,10 @@
+/**
+ * @tableofcontents
+ *
+ * 1. framework
+ * 2. extend
+ */
+
 (function ($, win)
 {
     'use strict';
@@ -14,6 +21,16 @@
         {
             assert.isFunction($);
         });
+        it('jTest is object', function()
+        {
+            assert.isObject(jTest);
+        });
+    });
+
+    /* @section 2. extend */
+
+    describe('extend', function()
+    {
         it('addClass is function', function()
         {
             assert.isFunction($.fn.addClass);
@@ -21,10 +38,6 @@
         it('removeClass is function', function()
         {
             assert.isFunction($.fn.removeClass);
-        });
-        it('jTest is object', function()
-        {
-            assert.isObject(jTest);
         });
     });
 })(window.jBone || window.Zepto || window.jQuery, window);

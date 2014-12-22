@@ -3,6 +3,7 @@
  *
  * 1. add class
  * 2. remove class
+ * 3. ajax
  */
 
 (function (win)
