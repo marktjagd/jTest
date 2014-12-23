@@ -1,8 +1,12 @@
 /**
  * @tableofcontents
  *
- * 1. framework
+ * 1. general
+ *    1.1 framework is present
+ *    1.2 namespace is present
  * 2. extend
+ *    2.1 addClass is function
+ *    2.2 removeClass is function
  */
 
 (function ($, win)
@@ -13,15 +17,20 @@
         it = win.it,
         assert = win.assert;
 
-    /* @section 1. framework */
+    /* @section 1. general */
 
-    describe('framework', function()
+    describe('general', function()
     {
-        it('$ is function', function()
+        /* @section 1.1 framework is present */
+
+        it('framework is present', function()
         {
             assert.isFunction($);
         });
-        it('jTest is object', function()
+
+        /* @section 1.2 namespace is present */
+
+        it('namespace is present', function()
         {
             assert.isObject(jTest);
         });
@@ -31,10 +40,15 @@
 
     describe('extend', function()
     {
+        /* @section 2.1 addClass is function */
+
         it('addClass is function', function()
         {
             assert.isFunction($.fn.addClass);
         });
+
+        /* @section 2.2 removeClass is function */
+
         it('removeClass is function', function()
         {
             assert.isFunction($.fn.removeClass);
