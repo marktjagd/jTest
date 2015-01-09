@@ -15,6 +15,7 @@
     "undef": true,
     "predef":
     {
+        "DOMTokenList": true,
         "jBone": true,
         "jQuery": true,
         "jTest": true,

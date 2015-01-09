@@ -8,7 +8,7 @@
  * 5. ajax
  */
 
-(function ()
+(function (win)
 {
     'use strict';
 
@@ -68,4 +68,4 @@
     {
         jBone.ajax = win.reqwest.compat;
     }
-})();
+})(window);
