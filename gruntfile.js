@@ -197,7 +197,7 @@ module.exports = function(grunt)
             ],
             options:
             {
-                threshold: 90
+                threshold: 80
             }
         }
     });

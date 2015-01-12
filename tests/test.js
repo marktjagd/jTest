@@ -15,8 +15,7 @@
 
     var describe = win.describe,
         it = win.it,
-        chai = win.chai,
-        assert = chai.assert;
+        assert = win.chai.assert;
 
     /* @section 1. general */
 
