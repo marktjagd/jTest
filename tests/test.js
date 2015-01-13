@@ -5,8 +5,8 @@
  *    1.1 framework is present
  *    1.2 namespace is present
  * 2. extend
- *    2.1 addClass is present
- *    2.2 removeClass is present
+ *    2.1 add class is present
+ *    2.2 remove class is present
  */
 
 (function ($, win)
@@ -40,14 +40,14 @@
 
     describe('extend', function ()
     {
-        /* @section 2.1 addClass is present */
+        /* @section 2.1 add class is present */
 
         it('checks if addClass() is present', function ()
         {
             assert.isFunction($.fn.addClass);
         });
 
-        /* @section 2.2 removeClass is present */
+        /* @section 2.2 remove class is present */
 
         it('checks if removeClass() is present', function ()
         {
