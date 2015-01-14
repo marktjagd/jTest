@@ -1,7 +1,5 @@
 .idea
-bower_modules
-coverage
+bower_components
 node_modules
 public/cssmin
 public/jsmin
-vendor
