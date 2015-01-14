@@ -12,6 +12,7 @@
         "boomerang": "*",
         "html5-polyfills": "*",
         "jbone": "~1",
+        "jbone-extend": "*",
         "jquery": "~2",
         "zepto": "~1"
     }

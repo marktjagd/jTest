@@ -117,7 +117,8 @@ module.exports = function(grunt)
                 [
                     'bower_components/jbone/dist/jbone.js',
                     'bower_components/html5-polyfills/classList.js',
-                    'assets/js/jbone_extend.js'
+                    'bower_components/jbone-extend/addclass.js',
+                    'bower_components/jbone-extend/removeclass.js'
                 ],
                 dest: 'public/jsmin/jbone.min.js'
             },
@@ -127,6 +128,8 @@ module.exports = function(grunt)
                 [
                     'bower_components/jbone/dist/jbone.js',
                     'bower_components/html5-polyfills/classList.js',
+                    'bower_components/jbone-extend/addclass.js',
+                    'bower_components/jbone-extend/removeclass.js',
                     'node_modules/reqwest/reqwest.js',
                     'assets/js/jbone_extend.js'
                 ],
