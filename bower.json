@@ -6,7 +6,7 @@
     {
         "boomerang": "*",
         "html5-polyfills": "*",
-        "jbone": "1.0.24",
+        "jbone": "1.0.27",
         "jquery": "~2.1",
         "zepto": "~1.1"
     }
